@@ -108,3 +108,69 @@ footer {
     color: white;
     margin-top: 40px;
 }
+/* Dark Mode Toggle */
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #e6e6e6;
+}
+
+/* Hero Section Dark */
+body.dark-mode .hero {
+    background: rgba(0,0,0,0.6) url('2-person-dome-tent.jpg') center/cover no-repeat;
+    color: #f5f5f5;
+    text-shadow: 1px 1px 4px rgba(255,255,255,0.3);
+}
+
+/* About Section Dark */
+body.dark-mode .about {
+    background: #2a2a2a;
+    color: #e6e6e6;
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+/* Project Cards Dark */
+body.dark-mode .project-card {
+    background: #2a2a2a;
+    border-left: 6px solid #c7a27c;
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+body.dark-mode .project-card a {
+    background: #c7a27c;
+    color: #1e1e1e;
+}
+
+body.dark-mode .project-card a:hover {
+    background: #e6c9a8;
+}
+
+/* Gallery Dark */
+body.dark-mode .gallery img {
+    box-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+
+/* Footer Dark */
+body.dark-mode footer {
+    background: #2a2a2a;
+    color: #e6e6e6;
+}
+
+/* Dark Mode Button */
+.dark-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #5a4635;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    transition: 0.3s;
+}
+
+.dark-toggle:hover {
+    background: #c7a27c;
+    color: #1e1e1e;
+}
