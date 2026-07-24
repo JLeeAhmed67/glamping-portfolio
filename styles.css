@@ -1,12 +1,110 @@
-.gallery {
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f4ef;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+    background: url('2-person-dome-tent.jpg') center/cover no-repeat;
+    padding: 80px 20px;
     text-align: center;
-    padding: 40px;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Section Titles */
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 2rem;
+    color: #5a4635;
+}
+
+/* About Section */
+.about {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Projects Section */
+.projects {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+.project-card {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 6px solid #c7a27c;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+    margin-top: 0;
+    color: #5a4635;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 16px;
+    background: #5a4635;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.project-card a:hover {
+    background: #c7a27c;
+}
+
+/* Gallery Section */
+.gallery {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
 }
 
 .gallery img {
     width: 300px;
     height: auto;
-    margin: 15px;
+    margin: 10px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #5a4635;
+    color: white;
+    margin-top: 40px;
 }
