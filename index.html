@@ -9,11 +9,22 @@
 <body>
 
     <header class="hero">
-        <h1>AI‑Enabled IT Support Portfolio</h1>
-        <p>Jacqueline – Philadelphia, PA</p>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Jacqueline</h1>
+            <h2>AI‑Enabled IT Support Specialist</h2>
+            <p>Combining human‑centered support with modern AI innovation.</p>
+            <button class="cta-btn">View My Work</button>
+        </div>
     </header>
 
-    <section class="about">
+    <nav class="top-nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#gallery">Glamping Gallery</a>
+    </nav>
+
+    <section id="about" class="about">
         <h2>About Me</h2>
         <p>
             I’m Jacqueline — an emerging IT Support Specialist developing core competencies in 
@@ -30,50 +41,61 @@
         </p>
     </section>
 
-    <section class="projects">
+    <section id="projects" class="projects">
         <h2>My Projects</h2>
 
-        <div class="project-card">
-            <h3>IT Support Fundamentals Showcase</h3>
-            <p>A demonstration of troubleshooting workflows, ticket documentation, and user support scenarios.</p>
-            <a href="https://www.comptia.org/certifications/a" target="_blank">View Project</a>
-        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>IT Support Fundamentals Showcase</h3>
+                <p>A demonstration of troubleshooting workflows, ticket documentation, and user support scenarios.</p>
+                <a href="https://www.comptia.org/certifications/a" target="_blank">View Project</a>
+            </div>
 
-        <div class="project-card">
-            <h3>AI‑Enhanced Productivity Toolkit</h3>
-            <p>Examples of using generative AI to streamline tasks, summarize information, and automate workflows.</p>
-            <a href="https://grow.google/certificates/ai/" target="_blank">View Project</a>
-        </div>
+            <div class="project-card">
+                <h3>AI‑Enhanced Productivity Toolkit</h3>
+                <p>Examples of using generative AI to streamline tasks, summarize information, and automate workflows.</p>
+                <a href="https://grow.google/certificates/ai/" target="_blank">View Project</a>
+            </div>
 
-        <div class="project-card">
-            <h3>Google IT Support Practice Labs</h3>
-            <p>Hands‑on labs covering OS configuration, networking basics, system administration, and troubleshooting.</p>
-            <a href="https://grow.google/certificates/it-support/" target="_blank">View Project</a>
+            <div class="project-card">
+                <h3>Google IT Support Practice Labs</h3>
+                <p>Hands‑on labs covering OS configuration, networking basics, system administration, and troubleshooting.</p>
+                <a href="https://grow.google/certificates/it-support/" target="_blank">View Project</a>
+            </div>
         </div>
     </section>
 
-    <section class="gallery">
+    <section id="gallery" class="gallery">
         <h2>Glamping Gallery</h2>
+        <p class="gallery-intro">A visual escape into cozy, nature‑inspired glamping spaces.</p>
 
-        <img src="003205-03-tent-bathroom.jpg" alt="Tent Bathroom">
-        <img src="2-person-dome-tent.jpg" alt="Dome Tent">
-        <img src="images.jff" alt="Glamping Image">
-        <img src="th (1).webp" alt="Outdoor Kitchen">
-        <img src="b7a7e094a18e5e3e1d99410fbfa98e99.jpg" alt="Glamping Scene">
-        <img src="f7febda_Header_Lushna-Outdoor-Kitchen-Pavil..." alt="Outdoor Pavilion">
+        <div class="gallery-grid">
+            <!-- Replace these filenames with your actual uploaded images -->
+            <img src="glamp-tent-1.jpg" alt="Luxury Glamping Tent">
+            <img src="glamp-cabin-1.jpg" alt="Cozy Glamping Cabin">
+            <img src="glamp-firepit-1.jpg" alt="Fire Pit at Night">
+            <img src="glamp-kitchen-1.jpg" alt="Outdoor Glamping Kitchen">
+            <img src="glamp-bathroom-1.jpg" alt="Glamping Bathroom">
+            <img src="glamp-view-1.jpg" alt="Scenic Glamping View">
+        </div>
     </section>
 
     <footer>
         <p>© 2026 Jacqueline – AI‑Enabled IT Support Portfolio</p>
     </footer>
 
+    <button class="dark-toggle" onclick="toggleDarkMode()">Dark Mode</button>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+
+        // Smooth scroll for "View My Work" button
+        document.querySelector('.cta-btn').addEventListener('click', () => {
+            document.querySelector('#projects').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+
 </body>
 </html>
-<button class="dark-toggle" onclick="toggleDarkMode()">Dark Mode</button>
-
-<script>
-function toggleDarkMode() {
-    document.body.classList.toggle('dark-mode');
-}
-</script>
-
